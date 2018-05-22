@@ -1,0 +1,41 @@
+
+#grid {
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+    padding-left: 0; /* Clears unordered list default of 40px */
+    margin-top:30px;
+}
+
+.clear:after {
+    content: "";
+    display: block;
+    clear: both;
+} 
+
+#grid li {
+    list-style-type: none;
+    position: relative;
+    float: left;
+    width: 17%;
+    padding: 0 0 17% 0;
+    /* -o-transform: rotate(-60deg) skewY(30deg);
+    -moz-transform: rotate(-60deg) skewY(30deg);
+    -webkit-transform: rotate(-60deg) skewY(30deg);
+    -ms-transform: rotate(-60deg) skewY(30deg); */
+    transform: rotate(-45deg) ;
+    background: #fd005f;
+    /* overflow: hidden; */
+}
+#grid li .hexagon {
+    position: absolute;
+    background: yellow;
+    width:200px;
+    height:100px;
+    
+    margin-top:17%;
+    transform:rotate(45deg);
+}
+#grid li *{
+    visibility: visible;
+}
